@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    width: 100%;
+    background-color: rgb(27, 26, 26);
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo{
+
+}
+
+.titulo_loja{
+
+}
+
+.menu_nav{
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu_nav img{
+    width: 30px;
+}
+
+/* AQUI É A CONFIGURAÇÃO CSS PARA MOBILE */
+
+@media (max-width: 769px){
+
+    header{
+        display: flex;
+        width: 100%;
+        background-color: rgb(27, 26, 26);
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+    .logo h1{
+    }
+    
+    .titulo_loja{
+    width: 30%;
+    margin-right: 0px;
+    padding-right: 0px;
+    }
+    .menu_nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
+
+    }
+    
+    .menu_nav img{
+        width: 30px;
+    }
+    .menu_nav input{
+        width: 30px;
+    }
+
+    .menu-drop{
+
+    }
+
+}
