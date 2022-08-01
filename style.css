@@ -31,6 +31,7 @@ header{
     width: 30px;
 }
 main{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,6 +107,34 @@ h3{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+/* AQUI É A CONFIGURAÇÃO CSS PARA PAGINA MASC.CSS */
+
+.categorias{
+    color: black;
+}
+a{
+    color: black;
+}
+
+.cat_repository{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.cat_card{
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 /* AQUI É A CONFIGURAÇÃO CSS PARA MOBILE */
