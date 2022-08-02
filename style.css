@@ -177,3 +177,59 @@ a{
     }
 
 }
+
+h1{
+    font-size: 50px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+}
+
+section{
+    display: block;
+}
+
+.produto1{
+    font-size: 50px;
+    text-align: center;
+    width: 60vw;
+    height: 30vh;
+    border: 3px solid black;
+    margin-top: 25px;
+    box-shadow: 10px 5px 5px black;
+}
+.produto2{
+    font-size: 50px;
+    text-align: center;
+    width: 60vw;
+    height: 30vh;
+    border: 3px solid black;
+    margin-top: 25px;
+    box-shadow: 10px 5px 5px black;
+
+}
+.produto3{
+    font-size: 50px;
+    text-align: center;
+    width: 60vw;
+    height: 30vh;
+    border: 3px solid black;
+    margin-top: 25px;
+    box-shadow: 10px 5px 5px black;
+
+}
+.valores{
+    font-size: 50px;
+    width: 30vw;
+    height: 95vh;
+    font-size: 50px;
+    text-align: center;
+    border: 3px solid black;
+    margin-top: 25px;
+    box-shadow: 10px 5px 5px black;
+
+}
