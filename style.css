@@ -289,3 +289,59 @@ section{
     padding: 70px;
     color: black;
 }
+
+.detalhes_produto{
+    display: flex;
+    font-size: 50px;
+    width: 70vw;
+    height: 60vh;
+    border: 3px solid black;
+    margin-top: 25px;
+    box-shadow: 10px 5px 5px black;
+    margin-bottom: 50px;
+    
+}
+
+.img_produto{
+    display: block;
+    padding: 50px;
+    width: 30vw;
+}
+
+.img_produto img{
+    width: 30vw;
+    height: 40vh;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+#tamanho{
+    font-size: 20px;
+    margin-left: 50px;
+    text-align: center;
+    width: 25vw;
+    height: 3vh;
+}
+
+.button input{
+    background-color: rgb(19, 199, 19);
+    width: 15vw;
+    height: 3vh;
+    font-size: 25px;
+    margin-top: 50px;
+
+}
+.button img{
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.info_produto{
+    width: 30vw;
+}
+
