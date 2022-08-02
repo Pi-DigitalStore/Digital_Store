@@ -266,3 +266,26 @@ section{
     box-shadow: 10px 5px 5px black;
 
 }
+
+.confirmacao{
+    font-size: 50px;
+    text-align: center;
+    width: 70vw;
+    height: 70vh;
+    border: 3px solid black;
+    margin-top: 25px;
+    box-shadow: 10px 5px 5px black;
+}
+
+.confirmacao h1{
+    font-size: 60px;
+    text-align: center;
+    padding: 50px;
+}
+
+.confirmacao h4{
+    font-size: 50px;
+    text-align: center;
+    padding: 70px;
+    color: black;
+}
