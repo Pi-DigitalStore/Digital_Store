@@ -11,25 +11,18 @@ header{
     color: white;
 }
 
-.logo{
-
-}
-
-.titulo_loja{
-
-}
 
 .menu_nav{
     width: 22%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .menu_nav img{
     width: 30px;
 }
+
 main{
     width: 100%;
     display: flex;
@@ -37,13 +30,53 @@ main{
     justify-content: center;
     align-items: center;
 }
-.carrocel{
+.carrossel {
     width: 90%;
     height: 30vh;
     margin-top: 20px;
-    background-color: rgb(188, 177, 199);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.carrossel img{
+    width: 60%;
+    height: 300px;
 }
+  
+  .foto {
+    position: absolute;
+    animation: animacao infinite 20s;
+    opacity: 0;
+  }
+  
+  @keyframes animacao {
+    25% {
+      opacity: 1;
+         transform: scale(1.1,1.1);
+    }
+   50% {
+      opacity: 0;
+         
+    }
+  }
+  
+  .foto:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .foto:nth-child(2) {
+    animation-delay: 5s;
+  }
+  
+  .foto:nth-child(3) {
+    animation-delay: 10s;
+  }
+  
+  .foto:nth-child(4) {
+    animation-delay: 15s;
+  }
+
 .departamentos{
     display: flex;
     flex-direction: row;
@@ -149,8 +182,6 @@ a{
         align-items: center;
         color: white;
     }
-    .logo h1{
-    }
     
     .titulo_loja{
     width: 30%;
@@ -171,11 +202,6 @@ a{
     .menu_nav input{
         width: 30px;
     }
-
-    .menu-drop{
-        
-    }
-
 }
 
 h1{
