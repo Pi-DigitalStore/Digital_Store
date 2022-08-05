@@ -105,73 +105,28 @@ footer div{
     width: 25%;
 }
 
-h3{
-    margin: 5px;
+.categorias{
+    color: black;
 }
-.forma_pagamento{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.forma_logos{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.social{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
-.ajuda{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.sobre{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+a{
+    color: black;
 }
 
-/* AQUI É A CONFIGURAÇÃO CSS PARA MOBILE */
+.cat_repository{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-@media (max-width: 769px){
+}
 
-    header{
-        display: flex;
-        width: 100%;
-        background-color: rgb(27, 26, 26);
-        justify-content: space-between;
-        align-items: center;
-        color: white;
-    }
-    
-    .titulo_loja{
-    width: 30%;
-    margin-right: 0px;
-    padding-right: 0px;
-    }
-    .menu_nav{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 40%;
+.cat_card{
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    }
-    
-    .menu_nav img{
-        width: 30px;
-    }
-    .menu_nav input{
-        width: 30px;
-    }
 }

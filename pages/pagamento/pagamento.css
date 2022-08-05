@@ -142,36 +142,34 @@ h3{
     text-align: center;
 }
 
-/* AQUI É A CONFIGURAÇÃO CSS PARA MOBILE */
+.dados_pessoais{
+    font-size: 50px;
+    text-align: center;
+    width: 30vw;
+    height: 90vh;
+    border: 3px solid black;
+    margin-top: 25px;
+    box-shadow: 10px 5px 5px black;
 
-@media (max-width: 769px){
+}
 
-    header{
-        display: flex;
-        width: 100%;
-        background-color: rgb(27, 26, 26);
-        justify-content: space-between;
-        align-items: center;
-        color: white;
-    }
-    
-    .titulo_loja{
-    width: 30%;
-    margin-right: 0px;
-    padding-right: 0px;
-    }
-    .menu_nav{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 40%;
+.formas_pagamento{
+    font-size: 50px;
+    text-align: center;
+    width: 30vw;
+    height: 90vh;
+    border: 3px solid black;
+    margin-top: 25px;
+    box-shadow: 10px 5px 5px black;
 
-    }
-    
-    .menu_nav img{
-        width: 30px;
-    }
-    .menu_nav input{
-        width: 30px;
-    }
+}
+.resumo_pedido{
+    font-size: 50px;
+    text-align: center;
+    width: 30vw;
+    height: 90vh;
+    border: 3px solid black;
+    margin-top: 25px;
+    box-shadow: 10px 5px 5px black;
+
 }
