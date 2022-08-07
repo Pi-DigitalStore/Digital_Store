@@ -32,9 +32,17 @@ main.container {
     border-radius: 8px;
 }
 
+.logo{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
 main h2 {
     margin-bottom: 2rem;
     position: relative;
+    margin-top: 5px;
 }
 
 main h2::before {
