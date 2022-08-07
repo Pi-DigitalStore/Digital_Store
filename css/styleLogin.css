@@ -1,3 +1,5 @@
+/*Importando a fonte Poppins do Google*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
@@ -8,8 +10,76 @@
     font-family: "Poppins", sans-serif;
 }
 
+/*Estilizando o Body e adicioando a cor de fundo linear*/
 body{
     background: linear-gradient(45deg, #157485f1, #b9d0d3);
     background-repeat: no-repeat;
     min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+/*Adicionado o "Efeito de 3D no container do main e estilizando o main*/
+
+main.container {
+    background-color: white;
+    max-width: 350px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba( 0,0, 0, 0.2);
+    border-radius: 8px;
+}
+
+main h2 {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+main h2::before {
+    content: " ";
+    background: linear-gradient(45deg, #157485f1, #b9d0d3);
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+}
+
+/*Estilizando o formulário e adioconando o flex-direction para ficar cada item um embaixo do outro*/
+form  {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba( 0,0, 0, 0.7);
+}
+
+.input-field input ::placeholder{
+    color: rgba( 0,0, 0, 0.7);
+}
+
+/*Estilizando o botão de Continuar*/
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background: linear-gradient(to right, #157485f1, #b9d0d3);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 4px;
+    transition:  all 0.2s ease;
+}
+
+
