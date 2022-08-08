@@ -78,7 +78,7 @@ form .input-field:first-child{
     width: 100%;
     bottom: -5px;
     left: 0;
-    background: rgba( 0,0, 0, 0.7)
+    background: rgba( 0,0, 0, 0.3)
 }
 
 .input-field .underline::after {
@@ -176,4 +176,8 @@ form input[type="submit"]::hover {
 
 #social-twitter {
     background: linear-gradient(to right, #56a7f2, #468aca);
+}
+
+#new-account{
+    background: linear-gradient(to right, #56f2b1, #3ea072);
 }
