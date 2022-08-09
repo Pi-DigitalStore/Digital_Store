@@ -23,6 +23,18 @@ header{
     width: 30px;
 }
 
+.menu-mobile{
+	display: none;
+	cursor: pointer;
+}
+
+.menu-mobile div{
+	width: 32px;
+	height: 2px;
+	background: white;
+	margin: 8px;
+}
+
 main{
     width: 100%;
     display: flex;
@@ -33,15 +45,17 @@ main{
 .carrossel {
     width: 90%;
     height: 30vh;
-    margin-top: 20px;
+    margin-top: 100px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
 .carrossel img{
     width: 60%;
     height: 300px;
+
 }
   
   .foto {
