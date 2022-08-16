@@ -78,6 +78,42 @@ main{
   align-items: center;
 }
 
+h1{
+  font-size: 50px;
+}
+
+.cat_repository{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.cat_card img{
+display: flex;
+width: 100%;
+height: 50%;
+}
+
+.cat_card p{
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.cat_card{
+  width: 300px;
+  height: 400px;
+  border: 2px solid black;
+  margin: 30px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 5px 5px black;
+
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -142,23 +178,4 @@ h3 {
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-
-.cat_repository{
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-}
-
-.cat_card{
-  width: 200px;
-  height: 300px;
-  border: 2px solid black;
-  margin: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
 }
