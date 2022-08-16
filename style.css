@@ -1,8 +1,9 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     display: flex;
     width: 100%;
     background: linear-gradient(45deg, #157485f1, #b9d0d3);
@@ -11,37 +12,57 @@ header{
     color: white;
 }
 
+.logo img {
+    width: 10vw;
+    height: 15vh;
+    margin-left: 50px;
+}
 
-.menu_nav{
-    width: 22%;
+.titulo_loja h3 {
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu_nav {
+    width: 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 50px;
 }
 
-.menu_nav img{
-    width: 30px;
+.menu_nav img {
+    width: 40px;
 }
 
-.menu-mobile{
-	display: none;
-	cursor: pointer;
+.menu_nav input {
+    width: 180px;
+    height: 35px;
+    border-radius: 50px;
+    padding-left: 10px;
+    font-size: 20px;
 }
 
-.menu-mobile div{
-	width: 32px;
-	height: 2px;
-	background: white;
-	margin: 8px;
+.menu-mobile {
+    display: none;
+    cursor: pointer;
 }
 
-main{
+.menu-mobile div {
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+}
+
+main {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .carrossel {
     width: 90%;
     height: 30vh;
@@ -50,105 +71,154 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-  }
-.carrossel img{
+
+}
+
+.carrossel img {
     width: 60%;
     height: 300px;
 
 }
-  
-  .foto {
+
+.foto {
     position: absolute;
     animation: animacao infinite 20s;
     opacity: 0;
-  }
-  
-  @keyframes animacao {
-    25% {
-      opacity: 1;
-         transform: scale(1.1,1.1);
-    }
-   50% {
-      opacity: 0;
-         
-    }
-  }
-  
-  .foto:nth-child(1) {
-    animation-delay: 0s;
-  }
-  
-  .foto:nth-child(2) {
-    animation-delay: 5s;
-  }
-  
-  .foto:nth-child(3) {
-    animation-delay: 10s;
-  }
-  
-  .foto:nth-child(4) {
-    animation-delay: 15s;
-  }
+}
 
-.departamentos{
+@keyframes animacao {
+    25% {
+        opacity: 1;
+        transform: scale(1.1, 1.1);
+    }
+
+    50% {
+        opacity: 0;
+
+    }
+}
+
+.foto:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.foto:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.foto:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.foto:nth-child(4) {
+    animation-delay: 15s;
+}
+
+main h1 {
+    font-size: 50px;
+}
+
+.departamentos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.departamentos div{
+
+.departamentos a {
+    text-decoration: none;
+    font-size: 40px;
+    color: #7adbecf1;
+    top: 1000px;
+}
+
+.departamentos div {
     background-color: rgb(188, 177, 199);
-    width: 300px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     border: 5px solid black;
     margin: 20px;
     text-align: center;
+
 }
 
-footer{
+.moda_masc {
+    background-image: url(./img/carrossel/foto2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.moda_femi {
+    background-image: url(./img/carrossel/foto5.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.moda_infa {
+    background-image: url(./img/carrossel/infa.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+footer {
     display: flex;
     justify-content: space-between;
     background: linear-gradient(45deg, #157485f1, #b9d0d3);
     color: white;
     width: 100%;
-    height: 20vh;
+    height: 30vh;
 
 }
 
-footer div{
+footer div {
     width: 25%;
 }
 
-h3{
+h3 {
+    font-size: 30px;
     margin: 5px;
 }
-.forma_pagamento{
+
+.forma_pagamento {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.forma_logos{
+
+.forma_logos {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-.social{
+
+.forma_logos img{
+    width: 100px;
+    height: 70px;
+    margin-right: 30px;
+}
+
+.social {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
-.ajuda{
+
+.ajuda {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.sobre{
+
+.ajuda a, .sobre a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.sobre {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,9 +228,9 @@ h3{
 
 /* AQUI É A CONFIGURAÇÃO CSS PARA MOBILE */
 
-@media (max-width: 769px){
+@media (max-width: 769px) {
 
-    header{
+    header {
         display: flex;
         width: 100%;
         background-color: rgb(27, 26, 26);
@@ -168,24 +238,26 @@ h3{
         align-items: center;
         color: white;
     }
-    
-    .titulo_loja{
-    width: 30%;
-    margin-right: 0px;
-    padding-right: 0px;
+
+    .titulo_loja {
+        width: 30%;
+        margin-right: 0px;
+        padding-right: 0px;
     }
-    .menu_nav{
+
+    .menu_nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 40%;
 
     }
-    
-    .menu_nav img{
+
+    .menu_nav img {
         width: 30px;
     }
-    .menu_nav input{
+
+    .menu_nav input {
         width: 30px;
     }
 }
