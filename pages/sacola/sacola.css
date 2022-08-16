@@ -70,6 +70,7 @@ body {
     margin: 8px;
   }
 
+
 main{
     margin: 50px;
     width: 100%;
@@ -77,6 +78,9 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+h1{
+  font-size: 50px;
 }
 section{
     display: block;
@@ -88,34 +92,47 @@ section{
 }
 
 .produto1{
+    display: flex;
     font-size: 50px;
-    text-align: center;
+    justify-content: flex-start;
+    align-items:center;
     width: 60vw;
     height: 30vh;
     border: 3px solid black;
     margin-top: 25px;
     box-shadow: 10px 5px 5px black;
 }
-.produto2{
-    font-size: 50px;
-    text-align: center;
-    width: 60vw;
-    height: 30vh;
-    border: 3px solid black;
-    margin-top: 25px;
-    box-shadow: 10px 5px 5px black;
 
+.produto1 img{
+  display: flex;
+  margin: 25px;
+  width: 90%;
+  height: 90%;
 }
-.produto3{
-    font-size: 50px;
-    text-align: center;
-    width: 60vw;
-    height: 30vh;
-    border: 3px solid black;
-    margin-top: 25px;
-    box-shadow: 10px 5px 5px black;
 
+.produto1 p{
+  font-size: 50px;
+  color:black;
+  margin: 25px
 }
+
+#quantidade{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+  height: 10%;
+  font-size: 25px;
+  margin-left: 200px;
+}
+#remover{
+  display: flex;
+  margin-left: 400px;
+  align-items: center;
+  width: 5%;
+  height: 10%;
+}
+
 .valores{
     font-size: 50px;
     width: 30vw;
