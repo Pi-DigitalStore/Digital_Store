@@ -23,6 +23,21 @@ header {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.categorias{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.categorias a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
 .menu_nav {
     width: 15%;
     display: flex;
