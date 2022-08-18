@@ -1,27 +1,31 @@
 body {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
   
-  header {
-    display: flex;
-    width: 100%;
-    background: linear-gradient(45deg, #157485f1, #b9d0d3);
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-  }
+}
 
-  .logo img {
-    width: 10vw;
-    height: 15vh;
-    margin-left: 50px;
-  }
-  
-  .titulo_loja h3 {
-    font-size: 50px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
+header {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(45deg, #157485f1, #b9d0d3);
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.logo img {
+  width: 10vw;
+  height: 15vh;
+  margin-left: 60px;
+}
+
+.titulo_loja h3 {
+ margin-left: 100%;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
   
   .categorias{
     width: 50vw;
@@ -226,3 +230,64 @@ h3 {
     justify-content: center;
     text-align: center;
 }
+.User{
+    margin-left: 32%;
+    left: 80px;
+    
+  }
+  
+  .procura01 {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(31, 126, 143);
+    top: 100;
+    bottom: 100%;
+    left: 80px;
+    right: 80% ;
+    cursor: text;
+    border-radius: 17px;
+  }
+  
+  
+  
+  .caixa-search:hover > .caixa-texto {
+    width: 240px;
+    height: 40px;
+    padding: 0 18px;
+    border-radius: 16px;
+  }
+  
+  .caixa-search:hover > .botao-search {
+    background-color: rgb(6, 10, 9);
+    margin-left: 5px;
+    top: 5px;
+  }
+  
+  .botao-search {
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    transition: 0.4s;
+  }
+  
+  .caixa-texto {
+    border: none;
+    background-color: #333;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    cursor: pointer;
+  }
+  
