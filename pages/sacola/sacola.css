@@ -123,9 +123,10 @@ section{
   width: 5%;
   height: 10%;
   font-size: 25px;
-  margin-left: 200px;
+  margin-left: 100px;
 }
 #remover{
+  background-color: aqua;
   display: flex;
   margin-left: 400px;
   align-items: center;
