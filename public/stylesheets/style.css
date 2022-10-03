@@ -1,0 +1,631 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    background: linear-gradient(45deg, #157485f1, #b9d0d3);
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    width: 10vw;
+    height: 15vh;
+    margin-left: 50px;
+}
+
+.titulo_loja h3 {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.categorias{
+    font-size: 10px;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.categorias a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu_nav {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 80px;
+}
+
+.menu_nav img {
+    width: 25px;
+    margin-left: 10px;
+}
+
+.menu_nav input {
+    width: 150px;
+    height: 25px;
+    border-radius: 50px;
+    padding-left: 10px;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.menu-mobile {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-mobile div {
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrossel {
+    width: 90%;
+    height: 30vh;
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.carrossel img {
+    width: 60%;
+    height: 300px;
+    box-shadow: 10px 5px 5px black;
+
+
+}
+
+.foto {
+    position: absolute;
+    animation: animacao infinite 20s;
+    opacity: 0;
+}
+
+@keyframes animacao {
+    25% {
+        opacity: 1;
+        transform: scale(1.1, 1.1);
+    }
+
+    50% {
+        opacity: 0;
+
+    }
+}
+
+.foto:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.foto:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.foto:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.foto:nth-child(4) {
+    animation-delay: 15s;
+}
+
+main h1 {
+    font-size: 50px;
+}
+
+.departamentos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.departamentos a {
+    text-decoration: none;
+    font-size: 40px;
+    color: #7adbecf1;
+    top: 1000px;
+}
+
+.departamentos div {
+    background-color: rgb(188, 177, 199);
+    width: 500px;
+    height: 500px;
+    border: 5px solid black;
+    margin: 20px;
+    text-align: center;
+    margin: 50px;
+
+}
+
+.moda_masc {
+    background-image: url(/img/carrossel/foto1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 5px 5px black;
+
+}
+.moda_femi {
+    background-image: url(/img/carrossel/foto5.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 5px 5px black;
+    
+}
+.moda_infa {
+    background-image: url(/img/carrossel/infa.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-shadow: 10px 5px 5px black;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #157485f1, #b9d0d3);
+    color: white;
+    width: 100vw;
+    height: 40vh;
+
+}
+
+footer div {
+    width: 25%;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 5px;
+}
+
+.forma_pagamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.forma_logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.forma_logos img{
+    width: 50px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ajuda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ajuda a, .sobre a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* AQUI É A CONFIGURAÇÃO CSS PARA MOBILE */
+
+@media (max-width: 769px) {
+
+    header {
+        display: flex;
+        width: 100%;
+        background-color: rgb(27, 26, 26);
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+
+    .titulo_loja {
+        width: 30%;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+    .menu_nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
+
+    }
+
+    .menu_nav img {
+        width: 30px;
+    }
+
+    .menu_nav input {
+        width: 30px;
+    }
+}
+
+/* -------------Pagina de confirmação de compra ---------------- */
+
+  .confirmacao {
+    background-image: url(/img/logo1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size: 50px;
+    text-align: center;
+    width: 70vw;
+    height: 70vh;
+    border: 3px solid black;
+    margin: 50px;
+    box-shadow: 10px 5px 5px black;
+  }
+  
+  .confirmacao h1 {
+    font-size: 20px;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .confirmacao h4 {
+    font-size: 20px;
+    text-align: center;
+    padding: 70px;
+    color: black;
+  }
+  
+
+  /*---------Pagina moda feminina ----------------------*/
+
+  main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+  font-size: 40px;
+}
+  .cat_repository{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+  }
+  .cat_card img{
+  display: flex;
+  width: 100%;
+  height: 50%;
+  }
+  
+  .cat_card p{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+  }
+  
+  .cat_card{
+    width: 300px;
+    height: 400px;
+    border: 2px solid black;
+    margin: 30px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 5px 5px black;
+  
+  }
+  
+
+  /*-------Pagina moda infantil ----------------------------------*/
+
+  .cat_repository{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+  }
+  .cat_card img{
+  display: flex;
+  width: 100%;
+  height: 50%;
+  }
+  
+  .cat_card p{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+  }
+  
+  .cat_card{
+    width: 300px;
+    height: 400px;
+    border: 2px solid black;
+    margin: 30px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 5px 5px black;
+  
+  }
+
+
+  /*-----------Pagina moda masculina ------------------------------*/
+  .cat_repository{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+  }
+  .cat_card img{
+  display: flex;
+  width: 100%;
+  height: 50%;
+  }
+  
+  .cat_card p{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+  }
+  
+  .cat_card{
+    width: 300px;
+    height: 400px;
+    border: 2px solid black;
+    margin: 30px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 5px 5px black;
+  
+  }
+
+  /*---------Pagina de pagamento---------------------------------*/
+
+  .pagamento {
+    display: flex;
+    
+  }
+  .dados_pessoais{
+      font-size: 50px;
+      text-align: center;
+      width: 30vw;
+      height: 90vh;
+      border: 3px solid black;
+      box-shadow: 10px 5px 5px black;
+      margin: 30px;
+  
+  }
+  
+  .formas_pagamento{
+      font-size: 50px;
+      text-align: center;
+      width: 30vw;
+      height: 90vh;
+      border: 3px solid black;
+      margin: 30px;
+      box-shadow: 10px 5px 5px black;
+  
+  }
+  .resumo_pedido{
+      font-size: 50px;
+      text-align: center;
+      width: 30vw;
+      height: 90vh;
+      border: 3px solid black;
+      margin: 30px;
+      box-shadow: 10px 5px 5px black;
+  
+  }
+
+/*-----------Pagina produto ---------------------------------------------*/
+
+
+  h6{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 20px;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detalhes_produto{
+    display: flex;
+    font-size: 20px;
+    width: 70vw;
+    height: 65vh;
+    border: 3px solid black;
+    margin-top: 25px;
+    box-shadow: 10px 5px 5px black;
+    margin-bottom: 50px;
+    
+}
+
+.img_produto{
+    display: block;
+    padding: 50px;
+    width: 30vw;
+    
+}
+
+.img_produto img{
+    width: 30vw;
+    height: 40vh;
+    box-shadow: 10px 5px 5px black;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#tamanho{
+    font-size: 10px;
+    margin-left: 50px;
+    text-align: center;
+    width: 25vw;
+    height: 3vh;
+    color:rgb(7, 7, 7);
+    font-weight: bolder;
+    font-size: 15px;
+    box-shadow: 10px 5px 5px black;
+}
+
+#tamanho option{
+    color:rgb(7, 7, 7);
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.button input{
+    background-color: rgb(19, 199, 19);
+    cursor:pointer;
+    width: 15vw;
+    height: 5vh;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: bolder;
+    box-shadow: 10px 5px 5px black;
+}
+.button img{
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 50px;
+    box-shadow: 10px 5px 5px black;
+}
+
+.info_produto{
+    width: 30vw;
+}
+
+/*-----------Pagina Sacola ------------------------------------------*/
+section{
+    display: block;
+}
+
+.container{
+    display: flex;
+    
+}
+
+.produto1{
+    display: flex;
+    font-size: 50px;
+    justify-content: flex-start;
+    align-items:center;
+    width: 60vw;
+    height: 30vh;
+    border: 3px solid black;
+    margin-top: 25px;
+    box-shadow: 10px 5px 5px black;
+}
+
+.produto1 img{
+  display: flex;
+  margin: 25px;
+  width: 90%;
+  height: 90%;
+}
+
+.produto1 p{
+  font-size: 50px;
+  color:black;
+  margin: 25px
+}
+
+#quantidade{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+  height: 10%;
+  font-size: 25px;
+  margin-left: 100px;
+}
+#remover{
+  background-color: aqua;
+  display: flex;
+  margin-left: 400px;
+  align-items: center;
+  width: 5%;
+  height: 10%;
+}
+
+.valores{
+    font-size: 50px;
+    width: 30vw;
+    height: 95vh;
+    font-size: 50px;
+    text-align: center;
+    border: 3px solid black;
+    margin-top: 25px;
+    margin-left: 25px;
+    box-shadow: 10px 5px 5px black;
+
+}
+
+  
+  
+  
+  
